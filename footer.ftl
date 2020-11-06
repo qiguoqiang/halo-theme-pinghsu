@@ -204,6 +204,8 @@ postDirectoryBuild();
 <script src="${theme_base!}/source/js/instantclick.min.js?v20140319"></script>
 </#if>
 
+<script type='text/javascript' src='${theme_base!}/source/app.js'></script>
+
 <#if settings.fast_click!false>
 <script src="//cdnjs.loli.net/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
 </#if>
