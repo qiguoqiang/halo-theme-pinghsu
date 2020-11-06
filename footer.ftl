@@ -1,3 +1,4 @@
+<#macro footer>
 <#import "functions.ftl" as fun>
 <footer id="footer" class="footer bg-white">
 	<div class="footer-social">
@@ -307,3 +308,4 @@ InstantClick.init('mousedown');
 </#if>
 </body>
 </html>
+</#macro>
