@@ -203,6 +203,17 @@ postDirectoryBuild();
 <#if settings.pjax!false>
 <script src="${theme_base!}/source/js/instantclick.min.js?v20140319"></script>
 </#if>
+<#assign cdn_base_url="https://cdn.jsdelivr.net/gh/LIlGG/cdn@1.0.8"/>
+<!-- 相册 -->
+<#if settings.photos_style == "justify">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+<#elseif settings.photos_style == "masonry" || settings.photos_style == "packery">
+<script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
+<#if settings.photos_style == "packery">
+<script type='text/javascript' src='${cdn_base_url!}/js/packery/packery-mode.pkgd.min.js'></script>
+</#if>
+</#if>
 
 <script type='text/javascript' src='${theme_base!}/source/js/app.js'></script>
 
